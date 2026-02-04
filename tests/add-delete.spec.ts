@@ -11,7 +11,7 @@ test.describe('Add / Delete Elements - Real UI', () => {
     await expect(deleteButton).toBeVisible();
   });
 
-  test('DELETE element', async ({ page }) => {
+  test('DELETE element - updated', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/add_remove_elements/');
 
     // Create first
