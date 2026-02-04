@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Add / Delete Elements - Real UI', () => {
 
-  test('CREATE element', async ({ page }) => {
+  test('CREATE element - updated', async ({ page }) => {
     await page.goto('https://the-internet.herokuapp.com/add_remove_elements/');
 
     await page.getByRole('button', { name: 'Add Element' }).click();
